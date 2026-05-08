@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Similarity Checker - Sumaiya & Bushra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📄 Text Similarity Checker</h1>
+            <p><strong>Longest Common Subsequence (LCS) Algorithm</strong></p>
+            <p>Project by: <strong>Sumaiya Khan & Bushra Wahid</strong> | HITMS Hyderabad</p>
+        </header>
+
+        <div class="input-section">
+            <label>📝 Document 1 (Assignment A):</label>
+            <textarea id="text1" placeholder="Paste first assignment here... (Test: Dynamic programming solves complex problems...)"></textarea>
+            
+            <label>📝 Document 2 (Assignment B):</label>
+            <textarea id="text2" placeholder="Paste second assignment here... (Test: LCS algorithm is used for plagiarism...)"></textarea>
+            
+            <button onclick="compareTexts()">🔍 Check Similarity</button>
+        </div>
+
+        <div id="result-section" class="result-section">
+            <h2>✅ Analysis Results</h2>
+            <div class="metrics">
+                <div class="metric">
+                    <span class="label">Similarity Score</span>
+                    <span id="similarity" class="value">--%</span>
+                </div>
+                <div class="metric">
+                    <span class="label">LCS Length</span>
+                    <span id="lcs-length" class="value">-- chars</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Status</span>
+                    <span id="status" class="status">Ready</span>
+                </div>
+            </div>
+            <div class="common-text">
+                <h3>🔍 Common Subsequence Found:</h3>
+                <pre id="common-result">No comparison done yet...</pre>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
